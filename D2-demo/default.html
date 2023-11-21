@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create a Nav bar</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: grey;
+        }
+
+        li {
+            float: right;
+        }
+
+        li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        /* li a:hover {
+            background-color: pink;
+            color: black;
+        } */
+
+        li a:hover:not(.active) {
+            background-color: rgb(218, 204, 207);
+            color: black;
+        }
+
+        .active {
+            background-color: orchid;
+        }
+
+        nav {
+            background-color: grey;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+            box-sizing: border-box;
+        }
+
+        img {
+            height: 50px;
+            float: left;
+
+            /* Set the height according to your design */
+            width: auto;
+            /* Maintain aspect ratio */
+            /* margin-right: 10px; */
+            /* Optional: Add some space between the logo and text */
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <img src="img/logo.svg" width="5%"" alt=" logo">
+        <ul>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#news">News</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a class="active" href="#home">Home</a></li>
+        </ul>
+    </nav>
+</body>
+
+</html>
